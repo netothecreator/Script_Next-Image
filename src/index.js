@@ -1,4 +1,8 @@
-const imgs = ["img/marshall.webp", "img/gold.webp", "img/usopp.webp"];
+const imgs = [
+  "/Script_Next-Image/img/marshall.webp",
+  "/Script_Next-Image/img/gold.webp",
+  "/Script_Next-Image/img/usopp.webp",
+];
 
 const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
@@ -14,10 +18,10 @@ btnNext.addEventListener("click", () => {
   imagem.src = imgs[indice];
 });
 
-btnPrev.addEventListener('click', () => {
-    indice--
-    if(indice < 0){
-        indice = 2;
-    }
-    imagem.src = imgs[indice]
-}) 
+btnPrev.addEventListener("click", () => {
+  indice--;
+  if (indice < 0) {
+    indice = 2;
+  }
+  imagem.src = imgs[indice];
+});
